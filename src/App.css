@@ -1,0 +1,140 @@
+/* CSS3 Neon Text Effect */
+.hero-bg.neon-hero .title {
+    cursor:pointer;
+      color: rgb(255, 174, 0);
+      text-shadow: 0em 0em 3em rgb(255, 174, 0),
+                   0em 0em 2em rgb(255, 174, 0),
+                   1px 1px 5px rgb(255, 174, 0),
+                   0px 0px 15px rgb(255, 174, 0),
+                   1px 0px 0px white,
+                  -1px 0px 2px rgba(0, 0, 0, .5);
+  }
+  .hero-bg.neon-hero .title:hover {
+      color: rgb(255, 174, 0);
+      text-shadow: 0em 0em 5em #ff7b00,
+                   0em 0em 3em #ff7b00,
+                   0em 0em 2em #ff7b00,
+                   1px 1px 5px #ff7b00,
+                   0px 0px 10px #ff7b00,
+                   0px 0px 25px #ff7b00,
+                   0px 0px 45px #ff7b00,
+                   2px 1px 0px white,
+                  -1px 0px 2px rgba(0, 0, 0, .5);
+  }
+  
+  html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+  }
+ 
+  
+  .hero-bg .title {
+      /* font-size: 2.5em; */
+      letter-spacing: 0px;
+      color: #ffffff;
+  }
+  .hero-bg .hero-text {
+      justify-content: center;
+      text-align: center;
+  }
+  .hero-bg .hero-image {
+      align-self: flex-end;
+  }
+  
+  
+  .neon-hero.hero-content>* {
+      z-index: 1;
+      position: relative
+  }
+  .hero-bg.neon-hero .title {
+      opacity: 1;
+      z-index: 1
+  }
+  .hero-bg.neon-hero:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+     
+      background-position: 50%;
+      background-size: cover;
+      z-index: 0
+  }
+  
+  /* RESET AND BASIC STYLES */
+  
+  h1{
+      font-size: 300px;
+      font-weight: 1000
+  }
+
+     
+  .hero-bg {
+      font-family: Source Sans Pro, Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      box-sizing: border-box
+  }
+  .hero-bg *,
+  .hero-bg:after,
+  .hero-bg:before {
+      box-sizing: inherit
+  }
+  .hero-bg .title {
+      color: hsla(0, 0%, 100%, .8);
+      font-weight: 300
+  }
+  
+  /* 
+   * NEON FONT COPYRIGHT MEDIALOOT, USED WITH SPECIAL PERMISION
+   * DO NOT LINK OR DOWNLOAD THIS, BUY FROM HERE: https://medialoot.com/item/neon-tubes-font
+  */
+  @font-face {font-family: 'neon_tubesregular'; src: url('https://medialoot.com/assets/fonts/neontubes-webfont.woff2') format('woff2'), url('https://medialoot.com/assets/fonts/neontubes-webfont.woff') format('woff');font-weight: normal; font-style: normal;}
+  /* END COPYRIGHTED FONT */
+  
+  .hero-bg .background-image {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+  }
+  .hero-bg .hero-text {
+      margin: 0;
+      max-width: 65%;
+      padding: 0 30px;
+      position: relative
+  }
+  
+  .neon {
+      font-family: neon_tubesregular, sans-serif
+  }
+  
+  #attr{
+    position:absolute;
+    bottom:10px;
+    font-family: helvetica, arial, sans-serif;
+    font-size:14px;
+    color: rgba(255,255,255,.5);
+    letter-spacing:.2px;
+  }
+  
+  #attr a {
+    color: rgba(255,255,255,.5);
+  }
+  
+  #attr a:hover{
+      color: rgba(255,255,255,.7);
+  }
