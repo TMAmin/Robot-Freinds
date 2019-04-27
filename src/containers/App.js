@@ -25,8 +25,8 @@ class App extends React.Component{
             return (
                 <div className='tc'>
                
-                    <div class="hero-bg hero-content neon-hero neon hero-header">
-                        <div class="title"><h1>ROBOT FREINDS</h1></div>
+                    <div className="hero-bg hero-content neon-hero neon hero-header">
+                        <div className="title"><h1>ROBOT FREINDS</h1></div>
                         <SearchBox onSearch = {this.onSearch}/>
                         <Scroll>
                         <CardList robots={robotFiltred} />
